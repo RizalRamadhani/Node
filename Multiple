@@ -1,0 +1,24 @@
+Multiple Node
+
+System Requirement : 
+1vcpu (better with 2vcpu+)
+1GB RAM (better with 2GB RAM+)
+200MB Disk
+100 Mbps Internet Speed
+
+Task :
+1. Register new wallet : https://www.app.multiple.cc/#/signup
+2. Copy Identifier Code
+
+Task Running Node :
+1. Copy : bash <(curl -s https://file.winsnip.xyz/file/uploads/multiple.sh)
+(Paste Identifier code & Input PIN bebas)
+2. Check Logs : cd ~/multipleforlinux && ./multiple-cli status
+3. Identifier check here : https://www.app.multiple.cc/#/setup
+4. Check Status : https://www.app.multiple.cc/#/dataPanel
+
+Detail : 
+https://multiple-network.gitbook.io/multiple-network-gitbook/multiple-node-participation-guide
+
+Funding : 
+https://cryptorank.io/ico/multiple-network#funding-rounds
