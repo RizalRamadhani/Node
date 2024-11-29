@@ -1,0 +1,26 @@
+Node Glacier Verifier Node
+
+Spesifikasi : 
+Hardware Requirements Minimum :
+CPU with 1+ cores
+2GB RAM
+4 MBit/sec download Internet service
+
+Task : 
+Register new wallet : https://www.glacier.io/nodes
+Claim Galxe : https://app.galxe.com/quest/glacierlabs/GChNBtVG6A
+Claim Faucet BNB Testnet : https://www.bnbchain.org/en/testnet-faucet
+Bridge Bnb Testnet to Opbnb Testnet : https://opbnb-testnet-bridge.bnbchain.org/deposit
+
+Task Running Node :
+1. Install Docker : sudo apt-get install -y ca-certificates curl gnupg lsb-release && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null && sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io && sudo apt-mark hold docker-ce docker-ce-cli containerd.io
+2. Copy : bash <(curl -s https://file.winsnip.xyz/file/uploads/glacier.sh)
+3. Copy : docker stop glacier-verifier && docker rm glacier-verifier && docker rmi glaciernetwork/glacier-verifier:v0.0.1 && docker run -d -e PRIVATE_KEY="YOUR_PRIVATE_KEY" --name glacier-verifier docker.io/glaciernetwork/glacier-verifier:v0.0.2
+4. Check Logs : docker logs -f glacier-verifier
+5. ( Abis Check Logs Klik CTRL + C )|
+6. Done Matiin APK 
+
+Check Status Di Web : https://testnet.nodes.glacier.io/status / (15-30 menit baru nongol)
+Yang sudah Run nanti dapat NFT
+cek disini (Paste Address)
+https://testnet.opbnbscan.com/
